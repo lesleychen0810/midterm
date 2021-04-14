@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中原大學商學院會計系</title>
+    <link rel="stylesheet" type="text/css" href="others.css">
+</head>
+
+<body>   
+        <div class="header">
+        <a href="https://ac.cycu.edu.tw/">
+          <img src="ac logo.png"  width="500" height="100" >
+        </a>
+      </div>
+  
+  
+      <hr size="3" align="center" noshade width="50%" color="black">
+         
+      <table align="center" height="300px" width="100%" style="margin-top: -50px;position: absolute;z-index: 90;min-width:1200px;">
+        <tr>
+         <td><div id="nav"><a href="BA.html"><img src="./img/a03.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="IB.html"><img src="./img/a05.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="AC.html"><img src="img/a07.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="cyim.html"><img src="./img/a02.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="FA.html"><img src="./img/a04.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="team member.html"><img src="./img/a06.png" alt="素材"></a></div></td>
+        </tr>
+        
+        </table>
+      
+      </div>
+    
+          <div style="margin-top: 250px; border-width: 10px;">
+            <div all >
+              <div class="allslide">
+                  <div class="slide">
+            
+                    <div class="mySlides">
+                      <img src="./img/會計_210414_0.jpg">
+                    </div>
+                    <div class="mySlides">
+                      <img src="./img/會計_210414_1.jpg">
+                    </div>
+                    <div class="mySlides">
+                      <img src="./img/會計_210414_2.jpg">
+                    </div>
+            
+                      <div class="mySlides">
+                        <img src="./img/會計_210414_3.jpg">
+                      </div>
+                       
+                      <div class="mySlides">
+                          <img src="./img/會計_210414_4.jpg">
+                      </div>
+                      
+                      <div class="mySlides">
+                          <img src="./img/會計_210414_5.jpg">
+                      </div>
+                      
+                      <div class="mySlides">
+                          <img src="./img/會計_210414_6.jpg">
+                      </div>
+                      <div class="mySlides">
+                          <img src="./img/會計_210414_7.jpg">
+                      </div>
+                      <div class="mySlides">
+                        <img src="./img/會計_210414_8.jpg">
+                    </div>
+                    <div class="mySlides">
+                      <img src="./img/會計_210414_9.jpg">
+                  </div>
+                  <div class="mySlides">
+                    <img src="./img/會計_210414_10.jpg">
+                </div>
+                <div class="mySlides">
+                  <img src="./img/會計_210414_11.jpg">
+              </div>
+                         
+                      <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                 
+                  </div>
+                      <br>
+                      <div class="cirbtn">
+                        <span class="cir" onclick="currentSlide(1)"></span> 
+                        <span class="cir" onclick="currentSlide(2)"></span> 
+                        <span class="cir" onclick="currentSlide(3)"></span> 
+                        <span class="cir" onclick="currentSlide(4)"></span> 
+                        <span class="cir" onclick="currentSlide(5)"></span> 
+                        <span class="cir" onclick="currentSlide(6)"></span> 
+                      </div>
+                  </div>
+            </div>
+            <!-- 
+  
+  //自動2秒一次
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");//取得所有 class 為 “mySlides” 的元素：
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  /*圖片消失*/
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block"; /*圖片出現*/
+  
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}-->
+
+<script>
+  //手動
+  var slideIndex = 1;
+     showSlides(slideIndex);
+     
+     function plusSlides(n) {
+       showSlides(slideIndex += n);
+     }
+     
+     function currentSlide(n) {
+       showSlides(slideIndex = n);
+     }
+     
+     function showSlides(n) {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       var squs = document.getElementsByClassName("squ");
+       if (n > slides.length) {slideIndex = 1}    
+       if (n < 1) {slideIndex = slides.length}
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";  
+       }
+       for (i = 0; i < squs.length; i++) {
+         squs[i].className = squs[i].className.replace(" active", "");
+       }
+       slides[slideIndex-1].style.display = "block";  
+       squs[slideIndex-1].className += " active";
+     }
+ 
+ </script>
+ 
+
+
+         <h1 class="ml2"><a href="https://ac.cycu.edu.tw/en/english/">中原大學商學院會計系</a></h1>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+         <script>// Wrap every letter in a span
+         var textWrapper = document.querySelector('.ml2');
+         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+         
+         anime.timeline({loop: true})
+           .add({
+             targets: '.ml2 .letter',
+             scale: [4,1],
+             opacity: [0,1],
+             translateZ: 0,
+             easing: "easeOutExpo",
+             duration: 950,
+             delay: (el, i) => 70*i
+           }).add({
+             targets: '.ml2',
+             opacity: 0,
+             duration: 1000,
+             easing: "easeOutExpo",
+             delay: 1000
+           });</script>
+
+    
+    <div class="introduction"> 
+          
+    <p>
+    會計系出路好嗎？<br>
+    會計系出路可以做什麼？<br>
+    這是許多人的疑問。<br><br></p>
+    <p>
+      會計人才是經濟建設的中堅，企業管理的要角，社會大眾之公證人，亦是政府課稅之參與者，與國家的經濟發展息息相關。 <br>
+      隨著經濟與科技之急速發展，對高素質會計專業人才之需求越加殷切。 <br>
+      故本系設立之宗旨即在為我國培養一流之會計專業人才，以配合我國經濟發展之需。<br>
+      初等會計學、中等會計學、高等會計學、成本會計學、審計學等，都是本系專攻之一。<br><br>
+    </p>
+   <p>
+      其實會計系畢業在於職場上有相當多的工作機會，<br>
+      因為台灣中小企業眾多也有許多大型知名企業，<br>
+      因此會計角色是公司中扮演財務重要關鍵工作，<br>
+      因為公司每天、每週、每月、每季甚至是每年運作下來，<br>
+      都會發生許多支出以及費用和產生營業收入，這些都必須仰賴會計財務角色執行以及運作。<br><br>
+     </p>
+      
+    
+    <p>也因此，會計人須具備細心、耐心、高數字敏銳度、邏輯性強等人格特質。<br>
+      因為如果發票數字錯誤、財務報表所造成影響，是會對公司營運、成本、績效帶來重大威脅，<br>
+      再者「誠信」是首要必備條件，<br>
+      在諸多媒體、新聞報導中可以發現有許多公司、企業對財務報表進行不實處理，<br>
+      以利製造給股東或投資人有良好表象，最後往往會導致不良結果，<br>
+      因此優秀且具誠信的會計人在會計系出路畢業後工作，在於社會職場上扮演非常重要關鍵角色！<br><br>
+
+      <h2>選擇中原會計，不必煩生計٩(✿∂‿∂✿)۶</h2><br>
+      </p>
+      <div>
+      <h1 class="ml4">
+        <span class="letters letters-1">一起看看會計系要做甚麼吧~~~</span>
+        <span class="letters letters-2">Ready?</span>
+        <span class="letters letters-3">Go!</span>
+      </h1>
+      
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>var ml4 = {};
+        ml4.opacityIn = [0,1];
+        ml4.scaleIn = [0.2, 1];
+        ml4.scaleOut = 3;
+        ml4.durationIn = 800;
+        ml4.durationOut = 600;
+        ml4.delay = 500;
+        
+        anime.timeline({loop: true})
+          .add({
+            targets: '.ml4 .letters-1',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+          }).add({
+            targets: '.ml4 .letters-1',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+          }).add({
+            targets: '.ml4 .letters-2',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+          }).add({
+            targets: '.ml4 .letters-2',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+          }).add({
+            targets: '.ml4 .letters-3',
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+          }).add({
+            targets: '.ml4 .letters-3',
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+          }).add({
+            targets: '.ml4',
+            opacity: 0,
+            duration: 500,
+            delay: 500
+          });
+         
+          
+        </script>
+  </div>
+
+    
+     <div class="main">
+
+<button class="accordion "><b>特 色</b></button>
+<div class="panel">
+   <div class="content">
+    <img src="特色.png" class="image1"> <br>
+
+   <b>理念:</b><br>
+    <u>教學方面</u><br>
+           理論與實務並重，強化學生數量及外語能力，整合會計、財務、稅法，及電腦運用等四學程。教學方式著重啟發，引導，並訓練學生獨立思考及分析的能力，培養國際宏觀及會計倫理的專業道德觀念。
+
+    <u>研究方面</u><br>
+    致力於會計及相關領域之研究，融合探討學理及實務案例，亦致力於啟發式教學之研究及增強學生學習績效之研究，以期研究成果能切合時代潮流，配合國家社會之需要，輔助教學，增強學生學習績效。
+
+    <u>服務社會</u><br>
+    針對國家社會之所需，配合時潮，提供適當的訓練，及進修課程供社會及產業人士修習，以落實終生學習之理念。<br>
+
+    <b>目標:</b><br>
+    一、培育人格與學養兼備，個人與群體平衡發展的會計專業人才。<br>
+    二、兼顧專業與通識教育的傳授，使學習內涵兼具創新與創意。<br>
+    三、培養重視職業道德且具備負責嚴謹工作態度的學生。<br>
+    四、深化會計專長，並強化資訊管理與稅務規劃能力，培養跨領域的高階會計專業人才。<br>
+    五、強調理論與實務兼顧的教學方式，培養具有終身學習能力的人才，期使人才學以致用。<br>
+    </div>  
+</div>
+<br><br>
+
+<button class="accordion "> <b>系主任/所長介紹</b></button>
+<div class="panel">
+    <div class="content">
+
+      <table width="100%" border="0" cellspacing="5" cellpadding="0" class="line-blue">
+        <tr>
+          <td width="22%" rowspan="7" align="center" valign="top" bgcolor="#edf4ff"><img src="ming.jpg" width="134" height="177" /></td>
+          <td colspan="8" valign="top" bgcolor="#d3e4ff" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="14%" class="blue16-014a80">姓名</td>
+              <td width="86%">張敏蕾</td>
+            </tr>
+          </table></td>
+          </tr>
+        <tr>
+          <td colspan="8" valign="top" bgcolor="#edf4ff"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="14%" class="blue16-014a80">職稱</td>
+              <td width="86%">教授/中原大學會計系系主任</td>
+            </tr>
+          </table></td>
+        </tr>
+        <!--<tr>
+          <td colspan="8" valign="top" bgcolor="#edf4ff" class="black16">Yi-Fen Chen</td>
+          </tr>-->
+        <tr>
+          <td colspan="8" valign="top" bgcolor="#d3e4ff"><table width="80%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="14%">
+                <table width="80%" border="0" cellspacing="0" cellpadding="0"></table>
+                      Mail              </td>
+
+              <td width="66" align="left"><a href="mailto:minglei@cycu.edu.tw ">fen@cycu.edu.tw</a>
+              </td>
+
+              <td width="20%">
+               </td>
+            </tr>
+
+          </table>
+        </td>
+        </tr>
+
+          <tr class="place1">
+          <td width="12%" valign="top" bgcolor="#edf4ff" >研究室</td>
+          <td colspan="5" valign="top" bgcolor="#edf4ff" >管理316 </td>
+          <td width="7%" valign="top" bgcolor="#edf4ff">電話</td>
+          <td width="29%" valign="top" bgcolor="#edf4ff">03-265-5316</td>
+        </tr>
+
+        <tr>
+          <td width="12%" align="left" valign="top" bgcolor="#D3E4FF" ><span>研究領域</span></td>
+          <td colspan="8" valign="top" bgcolor="#D3E4FF" class="black16"><p><span style="font-size: medium;">●財務會計</span><br /><span style="font-size: medium;">●公司治理</span><br /><span style="font-size: medium;">●國際租稅與國際稅務法規、</span><br /><span style="font-size: medium;">●中國大陸會計與稅制研究</span><br /></p></td>
+          </tr>
+
+        <tr>
+          <td align="left" valign="top" bgcolor="#edf4ff" >授課課程</td>
+          <td colspan="8" valign="top" bgcolor="#edf4ff" >●稅務法規<br>
+            ●財產及土地稅法<br>●財務會計理論<br>●全球化職涯規劃及發展等系列職涯課程<br></td>
+          </tr>
+
+          <tr>
+            <td align="left" valign="top" bgcolor="#d3e4ff" >學歷</td>
+          <td colspan="8" valign="top" bgcolor="#d3e4ff" ><p><span style="font-size: medium;">●台灣大學會計博士</span></p></td>
+          </tr>
+          
+        </table>
+      
+   </div>
+  </div>
+
+  <br><br>
+
+   <button class="accordion "><b> 出路</b></button>
+   <div class="panel">
+    <div class="content">
+       <img src="未來.png" class="image1"> <br>
+       中原會計系與四大會計師事務所往來密切，每學年度皆會舉辦事務所參訪活動，
+       讓學生提早了解未來工作環境；
+       四大事務所會於暑假提供事務所工讀機會，並於每學 年度上學期至本系舉辦校園徵才活動，
+       提供大四學生畢業之就業機會，本系之優秀學生於大四上學期即有機會錄取，
+       相較於他系學生畢業後仍需擔心出路是為一大優勢。 
+       
+       會計系出路進可攻退可守，為最適生存的不朽行業，
+       只要是與「商業行為」有關的活動，都非得會計專業人員的參與不可。
+       而另一個眾所皆知的會計人優勢是：會計專才要轉入其他與企業相關之管理、行銷、理財、證券投資等工作領域並不困難，
+       但其他領域人員則較難取代會計專才。
+       因此，要說『會計』是商業社會中最適生存 的行業一點也不誇張。 會計人的出路，一年四季暢通無阻。
+
+       <h3>Q1:會計系薪水大約多少？</h3>
+       <p>從人力銀行統計資料顯示上述會計相關人員會計系出路薪水上班族平均落在28K~58K，
+       社會新鮮人會計系出路薪水落在29K~38K，
+       大學會計系出路與碩士會計系出路畢業薪水是有差異性，
+       大學畢業社會新鮮人會計系出路薪水平均約29K~33K、
+       研究所碩士畢業社會新鮮人會計系出路薪水平均約34K~38K，
+       因此可以了解到讀了研究所在於社會新鮮人起薪部分，學歷上是有加值效果，
+       為此中原專門開了『4+1』，
+       準備給中原直升本系碩士的學生，
+       讓他們可以花更少的時間就拿到加薪的文憑。 </p><br>
+
+       <h4>不過這只是和中原直升的同學喔~~~~~</h4>
+
+       <h3>Q2:國貿系證照需要考哪些？</h3>
+       <p>會計相關的證照相當多元，公職是會計系畢業學長姐熱門選擇之一。
+         政府、國營事業工作上下班正常工作穩定不受大環境影響，
+         善用自己會計系所學專業，不論在公家機關單位或是國營事業都有發揮工作能力機會，
+         以及藉由念書時專業應考相關考試無往不利。
+
+       <h3>證照推薦</h3>
+       <table border="1">
+        <tr align="center">
+          <TD>
+            會計系出路推薦考試
+          </TD>
+          <td>
+            高普考-會計
+          </td>
+          <TD>
+            鐵路特考-會計
+          </TD>
+       </tr>
+        <tr align="center">
+          <td>
+           工作內容
+          </td>          
+          <td>
+            政府機關會計法規之擬訂、各機關預算執行與內部審核、財務經費業務與財務會計之審查核計。
+         </td>
+         <td>
+          辦理台鐵會計相關業務，處理會計業務、財務記帳管理工作、基本帳務計算、稅務事項處理及財報分析等。
+         </td>
+       </tr>
+      </table><br>
+     
+
+       <h3>Q3:常見的國貿系出路工作:</h3>
+       <table border="1">
+         <tr>
+           <TD>
+              國貿系出路工作
+           </TD>
+           <td>
+            民間公司會計
+           </td>
+           <TD>
+            會計事務所
+           </TD>
+           <TD>
+            政府機關/國營事業
+          </TD>
+         </tr>
+         <tr>
+           <td>
+            工作內容<br>&nbsp&<br>特性
+           </td>          
+           <td>
+            <b>內容：</b>
+            公司內會計交易紀錄與維持、處理現金票據的收支與交易登記、定期編製公司帳務報表。<br><br>
+            
+            <b>特性：</b>
+            業務項目雜事較多、薪水依各公司而定
+          </td>
+          <td>
+            <b>內容：</b>
+            針對公司季報、半年報、年報財務報表查核和所得稅申報簽證。<br><br>
+            
+            <b>特性：</b>
+            旺季月份時常加班、有週末加班機會
+          </td>
+          <td>
+            <b>內容：</b>
+           進入政府機關或國營事業發揮所長。<br><br>
+            
+            <b>特性：</b>
+            公職穩定的工作保障、健全的福利待遇，以及伴隨來的生活品質。
+          </td>
+         </tr>
+       </table>
+      
+      
+        </div>
+   </div>
+   <br><br>
+<div>
+    <button class="accordion "><b>環境資源</b></button>
+   <div class="panel">
+   
+     <div style="font-size: small">
+      <img src="環境.png" class="image1"> <br>
+      <img src="first.png" class="mypro1" align="right" width="200" height="400">  
+  
+
+      <div class="title-kun1">
+        <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="content" -->
+        <div class="content-kun1">
+          <div class="about5Border1">
+            <div class="about5from2TopBg"></div>
+            <div class="about5from2CenterBg">
+              <table width="96%" border="0" align="center" cellpadding="3" cellspacing="3">
+                <tr>
+                  <td>
+                    <td align="center" valign="middle"><div class="orangeBg">學生專用教室(ㄧ)</div></td>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="3" align="center" valign="middle">
+                    <img src="ac1.jpg" width="685" height="455" /></td>
+                  </tr>
+                <tr>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="center" valign="middle"><img src="ac2.jpg" width="210" height="140" /></td>
+                  <td align="center" valign="middle"><img src="ac3.jpg" width="210" height="140" /></td>
+                  <td align="center" valign="middle"><img src="ac4.jpg" width="210" height="140" /></td>
+                </tr>
+                <tr>
+                  <td align="center" valign="middle"><div class="orangeBg">學生專用教室(二)</div></td>
+                  <td align="center" valign="middle"><div class="orangeBg">學生專用教室(三)</div></td>
+                  <td align="center" valign="middle"><div class="orangeBg">學生專用教室(四)</div></td>
+                </tr>
+               
+              </table>
+
+                  
+        
+            </div>
+          </div>
+          
+              <img src="second.png"  class="mypro2" align="right" width="300" height="400">   
+              <img src="third.png" class="mypro3" align="left" width="300" height="400">  
+  </div>
+  <br><br>
+  
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>// Wrap every letter in a span
+      var textWrapper = document.querySelector('.ml2');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      
+      anime.timeline({loop: true})
+        .add({
+          targets: '.ml2 .letter',
+          scale: [4,1],
+          opacity: [0,1],
+          translateZ: 0,
+          easing: "easeOutExpo",
+          duration: 950,
+          delay: (el, i) => 70*i
+        }).add({
+          targets: '.ml2',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });</script>
+
+   
+</div>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+    </body>
+
+    <div class="footer">
+    <div class="web2">
+        <a href="index.html">
+            <img src="logo.png" alt="" >
+        </a>
+    </div>
+
+    <nav class="navbtn2">
+        <div class="item1">
+           <h3>地址：32023桃園市中壢區中北路200號(自強商學411室)<br>
+           200 Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C.</h3> <br>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.254655553562!2d121.24134161500476!3d24.95744908400828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221425297e35%3A0xffae1fe1097c9a2e!2z5Lit5Y6f5aSn5a245ZWG5a246Zmi!5e0!3m2!1szh-TW!2stw!4v1618027834714!5m2!1szh-TW!2stw" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           <br><br> </div>
+    </nav>
+
+
+    <div class="navphoto2"><br><br><br><br><br><br>
+       <a href="https://www.facebook.com/cyacalumni/" target="_blank"><img src="fb.jpg" alt=""></a>
+        <a href="mailto:acc@cycu.edu.tw?subject=與我聯絡"><img src="mail.jpg" alt=""></a>
+        <a href="tel:+886-3-2655302" ><img src="phone.png" width="50" height="50" alt=""></a>
+      	
+       
+    </div>
+    <button onclick="topFunction()" id="myBtn">Top</button>
+    <script>var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+  </div>
+    
+  <div class="co">
+    copyright&copy;中原大學資管系 Chung Yuan University 
+    </div> 
+
+</html>

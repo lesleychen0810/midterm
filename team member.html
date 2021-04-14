@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>個人簡介</title>
+	<link rel="stylesheet" type="text/css" href="members.css">
+    
+</head>
+ <body>
+  <!--music-->
+     <section class="music">
+            <embed src="The Best of Mozart.mp3" autostart="true" loop="true" hidden="true"></embed>
+    </section>
+
+
+    <div class="header"><a href="index.html"><img src="./img/cycucob_logo.png"  width="500" height="100"  /></a></div>
+
+
+    <hr size="3" align="center" noshade width="50%" color="black">
+    
+    
+   
+    <table align="center" height="300px" width="100%" style="margin-top: -50px;position: absolute;z-index: 90;min-width:1200px;">
+      <tr>
+       <td><div id="nav"><a href="BA.html"><img src="./img/a03.png" alt="素材"></a></div></td>
+       <td><div id="nav"><a href="IB.html"><img src="./img/a05.png" alt="素材"></a></div></td>
+       <td><div id="nav"><a href="AC.html"><img src="img/a07.png" alt="素材"></a></div></td>
+       <td><div id="nav"><a href="cyim.html"><img src="./img/a02.png" alt="素材"></a></div></td>
+       <td><div id="nav"><a href="FA.html"><img src="./img/a04.png" alt="素材"></a></div></td>
+       <td><div id="nav"><a href="team member.html"><img src="./img/a06.png" alt="素材"></a></div></td>
+      
+        </tr>
+      
+      </table>
+        </div>
+      <div style="margin-top: 250px; border-width: 10px;">
+       
+
+
+
+<div all >
+  <div class="allslide">
+      <div class="slide">
+
+        <div class="mySlides">
+          <img src="S__11116600.jpg">
+        </div>
+
+          <div class="mySlides">
+            <img src="S__11116597.jpg">
+          </div>
+           
+          <div class="mySlides">
+              <img src="S__11116617.jpg">
+          </div>
+          
+          <div class="mySlides">
+              <img src="S__11116618.jpg">
+          </div>
+          
+          <div class="mySlides">
+              <img src="S__15573050.jpg">
+          </div>
+          <div class="mySlides">
+              <img src="S__15573051.jpg">
+          </div>
+          <div class="mySlides">
+            <img src="S__15573053.jpg">
+        </div>
+        <div class="mySlides">
+          <img src="S__19333627.jpg">
+      </div>
+      <div class="mySlides">
+        <img src="S__19333629.jpg">
+    </div>
+    <div class="mySlides">
+      <img src="771D8F73-6123-4A0F-980C-0C82CAD128A1.jpg">
+  </div>
+             
+          <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                     
+      </div>
+          <br>
+          <div class="cirbtn">
+            <span class="cir" onclick="currentSlide(1)"></span> 
+            <span class="cir" onclick="currentSlide(2)"></span> 
+            <span class="cir" onclick="currentSlide(3)"></span> 
+            <span class="cir" onclick="currentSlide(4)"></span> 
+            <span class="cir" onclick="currentSlide(5)"></span> 
+            <span class="cir" onclick="currentSlide(6)"></span> 
+          </div>
+      </div>
+</div>
+
+
+
+<!-- 
+  
+  //自動2秒一次
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");//取得所有 class 為 “mySlides” 的元素：
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  /*圖片消失*/
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block"; /*圖片出現*/
+  
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}-->
+
+<script>
+ //手動
+ var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var squs = document.getElementsByClassName("squ");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < squs.length; i++) {
+        squs[i].className = squs[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      squs[slideIndex-1].className += " active";
+    }
+
+</script>
+
+
+
+       <!-- <div>
+          <iframe width="100%" height="500px" 
+          src="https://www.youtube.com/embed/TSDpf3eIpwU" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+          </div> -->
+
+
+          <h1 class="ml2">認識偶們:</h1>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+          <script>// Wrap every letter in a span
+          var textWrapper = document.querySelector('.ml2');
+          textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+          
+          anime.timeline({loop: true})
+            .add({
+              targets: '.ml2 .letter',
+              scale: [4,1],
+              opacity: [0,1],
+              translateZ: 0,
+              easing: "easeOutExpo",
+              duration: 950,
+              delay: (el, i) => 70*i
+            }).add({
+              targets: '.ml2',
+              opacity: 0,
+              duration: 1000,
+              easing: "easeOutExpo",
+              delay: 1000
+            });</script>
+          
+          <div align="center">
+
+        <div class="people">
+          <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+		            <img src="chieh1.jpg" class="ppp"> <br>
+              </div>
+               <div class="flip-box-back">
+                    <p><b>關於多媒專題ㄉ心得:</b><br>
+                       過程中我深深了解到分工的重要性以及事前準備也同樣重要。
+                       謝謝優秀的大家讓我偶可以沒後顧之憂的寫程式~
+                       最後我覺得前端網頁寫起來比後端更加生動有趣，
+                       各種特效排版，雖然每天熬夜真的很累，
+                       但是看原本雜亂無章的內容在我們的努力下，變得這麼的美麗，那種感動是無法言喻的!!                       
+                    
+                    </p>
+               </div>
+            </div>
+          </div>   
+          
+                           
+		        <a href="https://instagram.com/lesley_chen0810?igshid=icftdbdp28vg"  target="_blank" title="品緁的FB"><img src="fb.jpg"  alt="" class="fb1"></a>
+                <a href="https://instagram.com/lesley_chen0810?igshid=icftdbdp28vg"  target="_blank" title="品緁的IG"><img src="ig.png" alt="" class="ig1"></a> 
+		        姓名:陳品緁&nbsp&nbsp <br>		
+		        暱稱:chieh&nbsp&nbsp&nbsp <br>
+            &nbsp&nbsp生日:2001.08.10 <br>
+            星座:獅子寶寶&nbsp<br>
+		        &nbsp&nbsp&nbsp興趣:看電影、打球
+        </div>
+        <div>
+          <!--<img src="leo.gif" class="aa"></div>-->
+        
+		
+
+	
+
+	<div class="hr2">
+		<a name="people2"><hr></a>
+	</div>
+	
+	<div class="people2">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+		             <img src="leah.jpg" class="ppp"> <br>
+              </div>
+                <div class="flip-box-back">
+                    <P>關於多媒專題ㄉ心得:<br>
+                      我覺得網頁排版是一件很有趣也很困難的事情，
+                      除了要看怎麼排比較美觀還要考慮功能性等等，
+                      看著很多人熬夜打程式也覺得很辛苦，
+                      希望大家報告完可以好好休息，不然大家的黑眼圈都加深了！
+                    </p>
+                </div>
+            </div>                
+         </div>
+		      <a href="https://www.facebook.com/leah.lin.940"  target="_blank" title="品緁的FB"><img src="fb.jpg"  alt="" class="fb1"></a>
+              <a href="https://instagram.com/leah_uj?igshid=1i9ybdb2avac0"  target="_blank" title="品緁的IG"><img src="ig.png" alt="" class="ig1"></a> 
+		       姓名:林禹潔&nbsp&nbsp<br>
+           暱稱:Leah&nbsp&nbsp&nbsp&nbsp<br>
+		       &nbsp&nbsp生日:2001.06.20<br>
+           星座:雙子寶寶<br>	
+           興趣:打遊戲、畫畫
+	   </div >
+
+		
+
+	<div class="hr3">
+		<a name="people3"><hr></a>
+	</div>
+    <div class="people3">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+		             <img src="echo.jpg" class="ppp"> <br>
+              </div>
+                <div class="flip-box-back">
+                    <p><b>關於多媒專題ㄉ心得:</b><br>
+                      在學習多媒的路上，我發現當真正要解決一個問題時，寫code反而是最後一件事情。
+                      在寫code前，我們必須要先去找到問題的癥結點，反覆確認造成問題的主因，再確認是否為真因，
+                      最後是你要評估如何解決，有些解法可能不用寫code，寫些文件就可以解決了，
+                      當你把前面的事情都搞定後，最後才是寫程式。</p>
+                </div>
+            </div>                
+         </div>
+            
+                <a href="https://www.facebook.com/baby33445202020"  target="_blank" title="品緁的FB"><img src="fb.jpg"  alt="" class="fb1"></a>
+                <a href="https://instagram.com/echo_yihui?igshid=sonl2va0w65a"  target="_blank" title="品緁的IG"><img src="ig.png" alt="" class="ig1"></a> 	
+                姓名:石一輝&nbsp&nbsp<br>
+                暱稱: 小灰灰<br>
+                &nbsp&nbsp生日:2001.07.29<br>	
+                星座:獅子寶寶<br>
+                興趣:看辣妹、打遊戲
+	</div>
+
+		
+        
+        <div class="hr4">
+            <hr>
+        </div>
+    
+        <div class="people4">	
+            <a name="people4">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+              <div class="flip-box-front">
+		             <img src="baokai.jpg" class="ppp"> <br>
+                 </div>
+                 <div class="flip-box-back">
+                    <h3>關於多媒專題ㄉ心得:</h3>
+                      <p>網頁前端較後段更容易有成就感，
+                      雖然常常熬夜排版、做特效當碼農，不過看著網頁在我手中慢慢變美，也就值得了。</p>
+              </div>
+            </div>                   
+        </div>
+
+            <a href="https://www.facebook.com/profile.php?id=100004922432705"  target="_blank" title="品緁的FB"><img src="fb.jpg"  alt="" class="fb1"></a>
+             <a href="https://instagram.com/bokaihu_0313?igshid=19rv2s1dpkfo8"  target="_blank" title="品緁的IG"><img src="ig.png" alt="" class="ig1"></a> 		
+                姓名:胡博凱&nbsp&nbsp<br>
+                暱稱: Jeffery<br>
+                &nbsp&nbsp生日:2001.03.13<br>	
+                星座:雙魚寶寶<br>
+                興趣:運動、鋼琴
+      </div>
+        </div>
+       
+      </div>
+      <div><h2></h2></div>
+      
+     
+      <div class="form">
+	      
+  
+        <fieldset>
+           <legend>個人資料</legend> 
+      
+           &nbsp&nbsp&nbsp1.姓名:<input type="text" name="name"> <br>  <br>
+
+           &nbsp&nbsp&nbsp2.性別:
+            男<input type="radio" name="gender" value="male" checked>
+            女<input type="radio" name="gender" value="female">
+            <br> <br>
+      
+            &nbsp&nbsp&nbsp3.生日:<input type="date" name="birthday" value="1999-01-01">  <br>  <br>
+
+            &nbsp&nbsp&nbsp4.聯絡電話:<input type="text" name="cellphone" maxlength="10">  <br>  <br>
+
+            &nbsp&nbsp&nbsp5. E-mail: <input type="email" size="50" name="email">
+        <br>  <br>
+            &nbsp&nbsp&nbsp6.地址:
+        
+           <select name="CountyName">
+            <option value="宜蘭縣">宜蘭縣</option>
+            <option value="臺北市" selected>臺北市</option>
+            <option value="新北市">新北市</option>
+            <option value="桃園市">桃園縣</option>
+            <option value="新竹縣">新竹縣</option>
+            <option value="苗栗縣">苗栗縣</option>
+            <option value="臺中市">臺中縣</option>
+            <option value="彰化縣">彰化縣</option>
+            <option value="南投縣">南投縣</option>
+            <option value="雲林縣">雲林縣</option>
+            <option value="嘉義市">嘉義縣</option>
+            <option value="臺南市">臺南縣</option>
+            <option value="高雄市">高雄縣</option>
+            <option value="屏東縣">屏東縣</option>
+            <option value="臺東縣">臺東縣</option>
+            <option value="花蓮縣">花蓮縣</option>
+            <option value="澎湖縣">澎湖縣</option>         
+            <option value="金門縣">金門縣</option>
+            <option value="連江縣">連江縣</option>
+          </select>
+
+          <input type="text" size="50" name="address">
+          <br>  <br> 
+
+        </fieldset><br>
+
+        <fieldset>
+          <legend>本站使用回饋</legend>
+          &nbsp&nbsp&nbsp 1.排版 
+          <input type="radio" name=attend value="0">⭐️
+          <input type="radio" name=attend value="3">⭐️⭐️
+          <input type="radio" name=attend value="6">⭐️⭐️⭐️
+          <input type="radio" name=attend value="7">⭐️⭐️⭐️⭐️
+          <input type="radio" name=attend value="7">⭐️⭐️⭐️⭐️⭐️
+          <br>  <br>
+          &nbsp&nbsp&nbsp2.流暢度
+          <input type="radio" name=attend value="0">⭐️
+          <input type="radio" name=attend value="3">⭐️⭐️
+          <input type="radio" name=attend value="6">⭐️⭐️⭐️
+          <input type="radio" name=attend value="7">⭐️⭐️⭐️⭐️
+          <input type="radio" name=attend value="7">⭐️⭐️⭐️⭐️⭐️
+          <br>  <br>
+          &nbsp&nbsp&nbsp3.美觀程度
+          <input type="radio" name=attend value="0">⭐️
+          <input type="radio" name=attend value="3">⭐️⭐️
+          <input type="radio" name=attend value="6">⭐️⭐️⭐️
+          <input type="radio" name=attend value="7">⭐️⭐️⭐️⭐️
+          <input type="radio" name=attend value="7">⭐️⭐️⭐️⭐️⭐️
+          <br>  <br>
+          &nbsp&nbsp&nbsp4.請簡述你我們的期望或改進的建議:<br>
+          &nbsp&nbsp&nbsp  &nbsp&nbsp&nbsp<textarea rows="10" cols="50" name="note"></textarea>
+          <br>  <br>
+         </fieldset>
+
+         <p>
+          <input type="submit" value="送出" 
+          style="          
+          background: linear-gradient(right,#FE48D3,#BF3DC9); 
+          
+          background: -ms-linear-gradient(right,#FE48D3,#BF3DC9); 
+          
+          background: -webkit-linear-gradient(right,#FE48D3,#BF3DC9); 
+          
+          background: -o-linear-gradient(right,#FE48D3,#BF3DC9); 
+          
+          background: -moz-linear-gradient(right,#FE48D3,#BF3DC9);
+          
+          width:200px; 
+          
+          height:4em; 
+                   
+          border-radius:15px; 
+          
+          text-align: center; 
+          
+          vertical-align: middle; 
+          
+          margin-left: 40%; 
+          
+          font: size 20px;; 
+          
+          color: white;
+          
+          z-index: 999; "
+          >
+
+             
+          </p>
+       
+        
+     </form>
+        </div>
+
+</div>
+
+	<div class="homediv">
+		<a href="index.html"><img src="logo.png" class="home" alt="回首頁"></a>
+	</div>
+</body>
+
+  
+
+  <button onclick="topFunction()" id="myBtn">Top</button>
+  <script>var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+<div class="co">
+  copyright&copy;中原大學資管系 Chung Yuan University 
+  </div> 
+
+</html>

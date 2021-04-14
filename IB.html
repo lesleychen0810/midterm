@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中原大學商學院國貿系</title>
+    <link rel="stylesheet" type="text/css" href="others.css">
+</head>
+
+<body>   
+       <div class="header">
+        <a href="https://www.ib.cycu.edu.tw/aca-1-1.php">
+          <img src="ib logo.png"  width="500" height="100" tyle="display:block; margin:auto;">
+        </a>
+      </div>
+
+	<hr size="3" align="center" noshade width="50%" color="black">
+	
+	
+	<table id="#menu" align="center" height="300px" width="100%" style="margin-top: -50px;position: absolute;z-index: 90;min-width:1200px;">
+  
+        <tr>
+         <td><div id="nav"><a href="BA.html"><img src="./img/a03.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="IB.html"><img src="./img/a05.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="AC.html"><img src="img/a07.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="cyim.html"><img src="./img/a02.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="FA.html"><img src="./img/a04.png" alt="素材"></a></div></td>
+         <td><div id="nav"><a href="team member.html"><img src="./img/a06.png" alt="素材"></a></div></td>
+        </tr>
+        
+        </table>
+      
+      </div>
+    
+          <div style="margin-top: 250px; border-width: 10px;">
+
+
+            <div style="margin-top: 250px; border-width: 10px;">
+              <div all >
+                <div class="allslide">
+                    <div class="slide">
+              
+                      <div class="mySlides">
+                        <img src="./img/國貿_210414_2.jpg">
+                      </div>
+                      <div class="mySlides">
+                        <img src="./img/國貿_210414_1.jpg">
+                      </div>
+                      <div class="mySlides">
+                        <img src="./img/國貿_210414_3.jpg">
+                      </div>
+              
+                        <div class="mySlides">
+                          <img src="./img/國貿_210414_0.jpg">
+                        </div>
+                         
+                        <div class="mySlides">
+                            <img src="./img/國貿_210414_4.jpg">
+                        </div>
+                      
+                        
+                        <div class="mySlides">
+                            <img src="./img/國貿_210414_5.jpg">
+                        </div>
+                        
+                           
+                        <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                   
+                    </div>
+                        <br>
+                        <div class="cirbtn">
+                          <span class="cir" onclick="currentSlide(1)"></span> 
+                          <span class="cir" onclick="currentSlide(2)"></span> 
+                          <span class="cir" onclick="currentSlide(3)"></span> 
+                          <span class="cir" onclick="currentSlide(4)"></span> 
+                          <span class="cir" onclick="currentSlide(5)"></span> 
+                          <span class="cir" onclick="currentSlide(6)"></span> 
+                        </div>
+                    </div>
+              </div>
+              <!-- 
+    
+    //自動2秒一次
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");//取得所有 class 為 “mySlides” 的元素：
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  /*圖片消失*/
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block"; /*圖片出現*/
+    
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+  }-->
+  
+  <script>
+    //手動
+    var slideIndex = 1;
+       showSlides(slideIndex);
+       
+       function plusSlides(n) {
+         showSlides(slideIndex += n);
+       }
+       
+       function currentSlide(n) {
+         showSlides(slideIndex = n);
+       }
+       
+       function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         var squs = document.getElementsByClassName("squ");
+         if (n > slides.length) {slideIndex = 1}    
+         if (n < 1) {slideIndex = slides.length}
+         for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+         }
+         for (i = 0; i < squs.length; i++) {
+           squs[i].className = squs[i].className.replace(" active", "");
+         }
+         slides[slideIndex-1].style.display = "block";  
+         squs[slideIndex-1].className += " active";
+       }
+   
+   </script>
+   
+  
+
+         <h1 class="ml2"><a href="https://www.ib.cycu.edu.tw/about-1.php">中原大學商學院國貿系</a></h1>
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+         <script>// Wrap every letter in a span
+         var textWrapper = document.querySelector('.ml2');
+         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+         
+         anime.timeline({loop: true})
+           .add({
+             targets: '.ml2 .letter',
+             scale: [4,1],
+             opacity: [0,1],
+             translateZ: 0,
+             easing: "easeOutExpo",
+             duration: 950,
+             delay: (el, i) => 70*i
+           }).add({
+             targets: '.ml2',
+             opacity: 0,
+             duration: 1000,
+             easing: "easeOutExpo",
+             delay: 1000
+           });</script>
+
+     
+    <div class="introduction"> 
+          
+    <p >
+    國貿系出路好嗎？<br>
+    國貿系出路可以做什麼？<br>
+    這是許多人的疑問。<br><br></p>
+    <p>
+    國貿系全名為『國際貿易學系』或『國際經營與貿易學系』<br>
+    從科系的名稱可以了解到主要是培養從事國際商務人才科系<br>
+    因此只要是商業行為跨國形式我們都可以稱之為國際貿易。</p><br>
+    
+    <p>大家可能會問那國貿系和其他管理科系(如:企管系)有何差異呢?<br><br>
+    國貿系所學除了商管學院都必須要修習課程外，
+    還會有其他專業科目如：<br>
+    國際貿易實務、國際貿易法規、國際貿易理論、國際企業管理等(<a href="https://www.ib.cycu.edu.tw/aca-1-3.php">詳請參照此</a>)<br>
+    因此可以了解到身為國貿人除了商管學院基礎課程外多了許多國際化商務課程。</p><br>
+<div>
+    <h1 class="ml4">
+      <span class="letters letters-1">一起看看國貿系要做甚麼吧~~~</span>
+      <span class="letters letters-2">Ready?</span>
+      <span class="letters letters-3">Go!</span>
+    </h1>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>var ml4 = {};
+      ml4.opacityIn = [0,1];
+      ml4.scaleIn = [0.2, 1];
+      ml4.scaleOut = 3;
+      ml4.durationIn = 800;
+      ml4.durationOut = 600;
+      ml4.delay = 500;
+      
+      anime.timeline({loop: true})
+        .add({
+          targets: '.ml4 .letters-1',
+          opacity: ml4.opacityIn,
+          scale: ml4.scaleIn,
+          duration: ml4.durationIn
+        }).add({
+          targets: '.ml4 .letters-1',
+          opacity: 0,
+          scale: ml4.scaleOut,
+          duration: ml4.durationOut,
+          easing: "easeInExpo",
+          delay: ml4.delay
+        }).add({
+          targets: '.ml4 .letters-2',
+          opacity: ml4.opacityIn,
+          scale: ml4.scaleIn,
+          duration: ml4.durationIn
+        }).add({
+          targets: '.ml4 .letters-2',
+          opacity: 0,
+          scale: ml4.scaleOut,
+          duration: ml4.durationOut,
+          easing: "easeInExpo",
+          delay: ml4.delay
+        }).add({
+          targets: '.ml4 .letters-3',
+          opacity: ml4.opacityIn,
+          scale: ml4.scaleIn,
+          duration: ml4.durationIn
+        }).add({
+          targets: '.ml4 .letters-3',
+          opacity: 0,
+          scale: ml4.scaleOut,
+          duration: ml4.durationOut,
+          easing: "easeInExpo",
+          delay: ml4.delay
+        }).add({
+          targets: '.ml4',
+          opacity: 0,
+          duration: 500,
+          delay: 500
+        });
+       
+        
+      </script>
+</div>
+    
+<br><br><br><br>
+
+    <button class="accordion "><b>發展方向</b></button>
+    <div class="panel">
+       <div class="content">
+        <ul style="list-style-type:circle;">
+          <p>
+            <img src="發展.png" class="image1"> <br>
+      <li>•厚植國際金融及企業國際財務操作之研究及分析能力，培育國際化財務及金融管理人才。</li><br><br>     
+      <li>•結合航空城之重點發展，推動國際運籌與電子商務之研究與教學，提供政府及企業充沛之優秀從業人力。</li><br><br>  
+      <li>•建立具特色之經貿政策評估中心，提供產官學研各種政策評估服務，並培育優秀之經貿政策評估人才。</li><br><br>  
+      <li>•分析區域自由貿易協議、國際環境協議及國際能源市場變動對我國經濟及企業經營策略之影響。</li><br><br>  
+      <li>•推動服務學習，培養全人關懷及社會服務能力。</li></p>
+    
+
+    </div>  
+</div>
+<br><br>
+
+
+<button class="accordion "><b>特色</b></button>
+<div class="panel">
+   <div class="content">
+    <img src="特色.png" class="image1"> <br>
+    一、強調以國際企業經營與國際經濟與貿易為主要發展方向。<br><br> 
+      二、重視綠色貿易、區域經濟整合、能源與永續發展之教學與研究。<br><br>
+      三、重視理論與實務結合。<br><br>
+      四、重視國際化學習環境，提供多元之國外交換學習機會。<br><br>
+      五、強調洞悉問題、解決問題及分析研究能力之養成。<br><br>
+      六、重視團隊合作，也尊重個別差異。<br><br>
+      七、提供完備的獎勵制度。<br><br>
+    </div>  
+</div>
+<br><br>
+
+<button class="accordion "> <b>系主任/所長介紹</b></button>
+<div class="panel">
+    <div class="content">
+
+      <table width="100%" border="0" cellspacing="5" cellpadding="0" class="line-blue">
+        <tr>
+          <td width="22%" rowspan="7" align="center" valign="top" bgcolor="#edf4ff"><img src="chen.jpg" width="134" height="177" /></td>
+          <td colspan="8" valign="top" bgcolor="#d3e4ff" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="14%" class="blue16-014a80">姓名</td>
+              <td width="86%">&nbsp&nbsp&nbsp&nbsp陳宜棻</td>
+            </tr>
+          </table></td>
+          </tr>
+        <tr>
+          <td colspan="8" valign="top" bgcolor="#edf4ff">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="14%" class="blue16-014a80">職稱</td>
+              <td width="86%">&nbsp&nbsp&nbsp&nbsp教授/系主任/所長</td>
+            </tr>
+          </table></td>
+        </tr>
+        <!--<tr>
+          <td colspan="8" valign="top" bgcolor="#edf4ff" class="black16">Yi-Fen Chen</td>
+          </tr>-->
+        <tr>
+          <td colspan="8" valign="top" bgcolor="#d3e4ff"><table width="80%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td width="14%"><table width="80%" border="0" cellspacing="0" cellpadding="0">Mail</td></table>
+              <td width="6" align="left">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="mailto:fen@cycu.edu.tw "> fen@cycu.edu.tw</a></td>
+              <td width="20%">
+                                    </td>
+            </tr>
+          </table></td>
+        </tr>
+          <tr class="place1">
+          <td width="12%" valign="top" bgcolor="#edf4ff" >研究室</td>
+          <td colspan="5" valign="top" bgcolor="#edf4ff" >管理406 </td>
+          <td width="7%" valign="top" bgcolor="#edf4ff">電話</td>
+          <td width="29%" valign="top" bgcolor="#edf4ff">03-265-5217</td>
+        </tr>
+        <tr class="place2">
+          <td width="12%" valign="top" bgcolor="#D3E4FF" class="blue16-014a80">辦公室</td>
+          <td colspan="5" valign="top" bgcolor="#D3E4FF" class="black16"><span class="black16">商學311 </span></td>
+          <td width="7%" valign="top" bgcolor="#D3E4FF"><span class="blue16-014a80">電話</span></td>
+          <td width="29%" valign="top" bgcolor="#D3E4FF"><span class="black16">03-265-5200</span></td>
+        </tr>
+        <tr>
+          <td width="12%" align="left" valign="top" bgcolor="#EDF4FF" class="blue16-014a80"><span class="blue16-014a80">研究領域</span></td>
+          <td colspan="8" valign="top" bgcolor="#EDF4FF" class="black16"><p><span style="font-size: medium;">●行銷管理</span><br /><span style="font-size: medium;">●網路行銷</span><br /><span style="font-size: medium;">●電子商務</span><br /><span style="font-size: medium;">●企業管理<br /><span>●國際企業管理</span>&nbsp;</span></p></td>
+          </tr>
+        <tr>
+          <td align="left" valign="top" bgcolor="#edf4ff" class="blue16-014a80">授課課程</td>
+          <td colspan="8" valign="top" bgcolor="#edf4ff" class="black16">
+            <p><span style="font-size: medium;">●企業管理<br></span>
+              <span style="font-size: medium;">●行銷與企劃<br>
+                <span style="font-size: medium;">●國際企業經營策略</span><br>
+                <span style="font-size: medium;">●國際行銷管理</span><br>
+                <span style="font-size: medium;">●國際行銷管理專題</span><br>
+                <span style="font-size: medium;">●專題研究</span><br>
+                <span style="font-size: medium;">●電子商務概論</span><br>
+                <span style="font-size: medium;">●數位行銷企劃研究<br></span></td>
+          </tr>
+        <tr>
+          <td align="left" valign="top" bgcolor="#d3e4ff" class="blue16-014a80">著作</td>
+          <td colspan="8" valign="top" bgcolor="#d3e4ff" class="black16">
+          <table width="100%" border="0" cellspacing="1" cellpadding="5">                          
+              <tr>
+                <td width="93%">V<a href="http://www.sedonaws.com/members/YiFenChen/CV "  target="_blank" >SEDONA Web CV</a> </td>
+                        </table>
+           </td>
+          </tr>
+        <tr>
+          <td align="left" valign="top" bgcolor="#edf4ff" class="blue16-014a80">學歷</td>
+          <td colspan="8" valign="top" bgcolor="#edf4ff" class="black16"><p><span style="font-size: medium;">●國立交通大學 管理科學 博士</span></p></td>
+          </tr>
+        
+        <tr>
+          <td align="left" valign="top" bgcolor="#d3e4ff" class="blue16-014a80">經歷</td>
+          <td colspan="8" valign="top" bgcolor="#d3e4ff" class="black16">
+            <p><span style="font-size: medium;">●中原大學 創新創業發展中心 主任</span><br />
+            <span style="font-size: medium;">●中原大學 國際經營與貿易學系 副教授<br/></span>
+            <span style="font-size: medium;">●中原大學 國際經營與貿易學系 助理教授<br/></span>
+           </p></td>
+          </tr>
+        
+        </table>
+      
+   </div>
+  </div>
+  <br><br>
+
+   <button class="accordion "> <b>出路</b></button>
+   <div class="panel">
+    <div class="content">
+       <img src="未來.png" class="image1"> <br>
+        <p>以前國貿系畢業的學生，大多是到貿易公司或政府單位，如國貿局等等單位。</p><br>
+        <p>如同前述，由於現在整個貿易經營環境的變化，從過去的實體交易轉變得更加數位化，因此國貿系出路也變得更加多元，為此國貿系也分成了四組，就是為了能更好的提升學生的進爭機會。</P>
+          例如現今數位化時代下跨境電商機會，跨境電商簡單說就是透過線上、網路上進行國際貿易商務行為，除了這個，其他常見國貿系出路如：國際業務行銷、報關、進出口、採購等，
+          因此國貿系出路不論是過去或是現在，只要是跨國商務行為線上與線下你都獨具職場競爭優勢！出路也是相當的廣。</p><br>
+          到目前為止，我們發現有一半以上的本系學生會繼續升學，另外一半的學生在求職方面也十分順利。</p>
+          <p>為什麼呢?</p><br>
+             <p>因為企業界要的人不是只懂得公司內部管理知識，也希望他們同時具備宏觀的視野與總體環境的分析能力。而這正是我們國貿系 整個課程規劃所提供的能力訓練。</p><br>
+       <h3>Q1:國貿系出路薪水有多少？</h3>
+       <p>這問題其實都跟國貿系出路工作，需要具備哪些重要能力是相對應關係，
+       國貿系出路畢業該具備能力就是外語，可以了解到跨國貿易首先溝通就是語言，
+       不論是口說、打字都要具備到能進行溝通程度，國貿許多法規也都是使用英文方式進行溝通，
+       因此除了國貿對應國家語言外英文是國際間共同語言。國貿系出路薪水有多少呢？
+       根據人力銀行資料顯示社會新鮮人起薪，以一般大學來說約28K~46K，私立大學約28K~35K、公立大學35K~46K，
+       因此從人力銀行數據上來說公立立大學與私立大學國貿系出路薪水有其差異性，
+       不過這些都是參考基準值，薪水高低在於個人對公司貢獻程度比較有直接關聯性。 </p><br>
+
+       <h3>Q2:國貿系證照需要考哪些？</h3>
+       <p>國貿相關的證照相當多元，也會依據不同主辦單位有不同相關證照種類如：
+       考選部-專責報關人員、
+       進出口商業同業公會-貿易經營師、
+       國貿大會考、
+       勞動部-國貿業務技術士。
+
+       透上述內容可以了解到國貿系證照相當多元，有些公司或是職務都會要求相關證照內容具備，
+       因此國貿出路薪水、證照都是身為國貿人在職場上就業必須要了解必備知識。</p><br>
+
+       <h3>證照推薦</h3>
+       <table border="1">
+        <tr align="center">
+          <TD>
+            國貿系出路推薦考試
+          </TD>
+          <td>
+            高普考-財稅行政
+          </td>
+          <TD>
+            高普考-經建行政
+          </TD>
+          <TD>
+            關務特考-財稅行政
+         </TD>
+        </tr>
+        <tr align="center">
+          <td>
+           工作內容
+          </td>          
+          <td>
+            政府國稅相關單位，稅務工作、查稅、受理繳稅、稽查、稅務相關資料歸檔等業務。
+         </td>
+         <td>
+          政府機關單位，工商發展登記、工商輔導、公用事業管理、觀光行銷等相關業務。
+         </td>
+         <td>
+          財政部關稅單位，進出口通關作業、行李檢查、驗貨、分估、查價、事後稽核、押運、查緝、緝案處理、法務處理及一般行政等內、外勤業務。
+         </td>
+        </tr>
+      </table><br>
+     
+
+       <h3>Q3:常見的國貿系出路工作:</h3>
+       <table border="1">
+         <tr>
+           <TD>
+              國貿系出路工作
+           </TD>
+           <td>
+             國貿人員
+           </td>
+           <TD>
+             報關人員
+           </TD>
+           <TD>
+            政府機關
+          </TD>
+         </tr>
+         <tr>
+           <td>
+            工作內容<br>&nbsp&<br>特性
+           </td>          
+           <td>
+            <b>內容：</b>
+            處理國際貿易業務如：進出口、報關、參展。<br><br>
+            
+            <b>特性：</b>
+            經常出國參展、跨國語言溝通、拜訪客戶，變動性高的挑戰性工作。
+          </td>
+          <td>
+            <b>內容：</b>
+            跨國進出口貨物簽收工作，代理處理報關業務。<br><br>
+            
+            <b>特性：</b>
+            報關人員除了文件處理員屬於內勤，其他外務員需要在外進行處理。
+          </td>
+          <td>
+            <b>內容：</b>
+           進入政府機關發揮所長。<br><br>
+            
+            <b>特性：</b>
+            公職穩定的工作保障、健全的福利待遇，以及伴隨來的生活品質。
+          </td>
+         </tr>
+       </table>
+      
+      
+        </div>
+   </div>
+   <br><br>
+<div>
+   <button class="accordion "><b>環境資源</b></button>
+   <div class="panel">
+   
+    <div style="font-size: small">
+      <img src="環境.png" class="image1"> <br>
+      <h1 class="ml2"><a href="ib-eviroment.html">環境資源 Our Environment</a></h1>
+      <img class="click" src="clickme.png">
+
+
+      <div class="title-kun1">
+      <!-- InstanceEndEditable --><!-- InstanceBeginEditable name="content" -->
+      <div class="content-kun">
+        <div class="about5Border">
+          <div class="about5from2TopBg"></div>
+          <div class="about5from2CenterBg">
+            <table width="96%" border="0" align="center" cellpadding="3" cellspacing="3">
+              <tr>
+                <td>
+                  <td align="center" valign="middle"><div class="orangeBg">國貿系辦公室</div></td>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" align="center" valign="middle">
+                  <img src="ib1.jpg" width="685" height="455" /></td>
+                </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><img src="ib2.jpg" width="210" height="140" /></td>
+                <td align="center" valign="middle"><img src="ib3.jpg" width="210" height="140" /></td>
+                <td align="center" valign="middle"><img src="ib4.jpg" width="210" height="140" /></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><div class="orangeBg">應用經濟模型研究中心</div></td>
+                <td align="center" valign="middle"><div class="orangeBg">商學301研討室</div></td>
+                <td align="center" valign="middle"><div class="orangeBg">商學302專業教室</div></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><img src="ib5.jpg" width="210" height="140" /></td>
+                <td align="center" valign="middle"><img src="ib6.jpg" width="210" height="140" /></td>
+                <td align="center" valign="middle"><img src="ib7.jpg" width="210" height="140" /></td>
+              </tr>
+              <tr>
+                <td align="center" valign="middle"><div class="orangeBg">商學303即時財經預測室</div></td>
+                <td align="center" valign="middle"><div class="orangeBg">商學309B貿易談判室</div></td>
+                <td align="center" valign="middle"><div class="orangeBg">商學307專業教室</div></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+</div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>// Wrap every letter in a span
+      var textWrapper = document.querySelector('.ml2');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+      
+      anime.timeline({loop: true})
+        .add({
+          targets: '.ml2 .letter',
+          scale: [4,1],
+          opacity: [0,1],
+          translateZ: 0,
+          easing: "easeOutExpo",
+          duration: 950,
+          delay: (el, i) => 70*i
+        }).add({
+          targets: '.ml2',
+          opacity: 0,
+          duration: 1000,
+          easing: "easeOutExpo",
+          delay: 1000
+        });</script>
+        </div>
+      
+      </div>
+    
+  <br><br>
+  
+
+   
+
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+ 
+    </body>
+
+    <div class="footer">
+      <div class="web2">
+          <a href="index.html">
+              <img src="logo.png" alt="" >
+          </a>
+      </div>
+  
+      <nav class="navbtn2">
+          <div class="item1">
+             <h3>地址：32023桃園市中壢區中北路200號<br>
+             200 Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C.</h3> <br>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.254655553562!2d121.24134161500476!3d24.95744908400828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221425297e35%3A0xffae1fe1097c9a2e!2z5Lit5Y6f5aSn5a245ZWG5a246Zmi!5e0!3m2!1szh-TW!2stw!4v1618027834714!5m2!1szh-TW!2stw" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+             <br></nav>
+  
+  
+             <div class="navphoto2"><br><br><br><br><br><br>
+              
+              <a href="https://www.facebook.com/ib.cycu?ref=hl" target="_blank"><img src="fb.jpg" alt="">
+              <a href="tel:+886-3-2655102"><img src="phone.png" alt=""></a>
+              </a>
+           </div>
+           <button onclick="topFunction()" id="myBtn">Top</button>
+           <script>var mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+        
+         </div>
+      
+  <div class="co">
+    copyright&copy;中原大學資管系 Chung Yuan University 
+    </div> 
+</html>
