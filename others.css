@@ -451,14 +451,14 @@ top:-350px;
 
 
 .title-kun1 {
-	     	
-		width:734px;
-		height: 800px;
+	     	 align-items: center;
+		      width:734px;
+		       height: 800px;
                 border:7px #DBBFA9 double;
-		border-radius: 10px;
+		       border-radius: 10px;
                 position:relative;
                 top:-100px;
-                left:500px;
+                left:1000px;
  		
 }
 .content-kun {
