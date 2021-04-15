@@ -73,7 +73,6 @@ header{
 .animation-3 {
   animation: scroller 50s linear infinite;
   display: flex;
-  
   width: calc(380px * 12);
 }
 
