@@ -287,16 +287,15 @@ position:absolutive;
 margin:300px;
 }
 
-.title-kun1 {
+.title-kun{
 	     	
 		width:734px;
-		height: 950px;
-                
+		height: 950px;        
 		border:7px #DBBFA9 double;
 
 		border-radius: 10px;
-position:absolue;
-top:-200px;
+position:relative;
+top:-50px;
 left:400px;
 		
 }
@@ -458,7 +457,7 @@ top:-350px;
 		       border-radius: 10px;
                 position:relative;
                 top:-100px;
-                left:1000px;
+                left:500px;
  		
 }
 .content-kun {
