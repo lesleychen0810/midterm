@@ -11,20 +11,23 @@ html{	width: 100%;
 }
 
 
-
-
-
-
 body  {
-           
-           hight:100%;
+           background-image: url('./img/bg.jpg');
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           background-attachment: fixed;
+           height:100%;
 	   margin:0;
 	   padding: 0;    
 	   font-family: "Simsum";
-           font-size: 22px; 
-           background-color:c;
-           width: 100%;
+     font-size: 22px; 
+     
+      width: 100%;
 }
+
+
+
 
 .header {
     vertical-align: middle;
@@ -406,19 +409,22 @@ hr{		height: 3px;
  
 		}
 
-.fb1{	        width:50px;
+.fb1{	        
+  
+  width:50px;
 		height:50px;
 		position:absolute;
 		top:340px;
 		left:340px;
-                z-index:-1; 
+                
 }
-.ig1{	        width:60px;
+.ig1{	        
+  width:60px;
 		height:60px;
 		position:absolute;
 		top:336px;
 		left:400px;
-                z-index:-1;
+                
 }
 .personal{
                 width:50px;
