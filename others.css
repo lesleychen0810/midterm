@@ -61,7 +61,19 @@ position: relative;
     vertical-align: middle;/*垂直至中*/
     width: 1000px;
     height: 700px;
-    margin-left: 35%;
+    margin-left: 19%;
+    margin-top: 0%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.mySlides1 img {
+    vertical-align: middle;/*垂直至中*/
+    width: 1000px;
+    height: 700px;
+    margin-left: 22.5%;
     margin-top: 0%;
     box-sizing: border-box;
     background-size: cover;
