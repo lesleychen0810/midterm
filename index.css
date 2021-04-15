@@ -1,47 +1,12 @@
 body {
   font-size: 22px; /* just for this demo */
-  background-color:white; /*:rgb(180, 192, 189);*/
-
+  background-color:white;
   width: 100%;
+
 }
 header{
   background-attachment: fixed;
 }
-
-footer{
-  background-color: rgb(61, 56, 56);
-  color: #fff;
-  height: 60px;
-  width: 100%;
-}
-
-
-.coee{
-  text-align:center;
-  font-size:20px;
-width:100%;
-background-color: rgb(61, 56, 56);
-color: #fff;
-  position: relative;
-  height:100px;
-bottom: 0px;
-margin: 0;
-}
-
-
-.coeee{
-  text-align:center;
-  font-size:40px;
-width:100%;
-background-color: rgb(61, 56, 56);
-color: #fff;
-  position: relative;
-  height:40px;
-bottom: 0px;
-margin: 0;
-top: -40px;
-}
-
 
 .textGradient {
    
@@ -55,18 +20,18 @@ top: -40px;
 }
 
 .page {
-  margin: 50vh auto;
+  margin: 40vh auto;
   display: flex;
   max-width: 1140px;
   
-  background-color:white;/*:rgb(180, 192, 189);*/
+  background-color:white;
   
 }
 
 .container {
   width: 100%;
   height: 80vh;
-  background: white;/*#e9e4e4*/
+  background: #e9e4e4;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -82,7 +47,7 @@ top: -40px;
 }
   .photo-item {
     width: 320px;
-    height: 180px;
+    height: 200px;
     margin-right: 60px;
     margin-bottom: 60px;
     border-radius: 16px;
@@ -97,18 +62,18 @@ top: -40px;
 .animation-1 {
   animation: scroller 40s linear infinite;
   display: flex;
-  width: calc(300px * 12);
+  width: calc(380px * 12);
 }
 .animation-2 {
   margin-left: 150px;
   animation: scroller 30s linear infinite;
   display: flex;
-  width: calc(300px * 12);
+  width: calc(380px * 12);
 }
 .animation-3 {
   animation: scroller 50s linear infinite;
   display: flex;
-  width: calc(300px * 12);
+  width: calc(380px * 12);
 }
 
 
@@ -127,58 +92,58 @@ top: -40px;
 
 
 .photo-1 {
-  background-image: url(photo-img/1.jpg);
+  background-image: url(1.jpg);
 }
 .photo-2 {
-  background-image: url(photo-img/2.jpg);
+  background-image: url(2.jpg);
 }
 .photo-3 {
-  background-image: url(photo-img/3.jpg);
+  background-image: url(3.jpg);
 }
 .photo-4 {
-  background-image: url(photo-img/4.jpg);
+  background-image: url(4.jpg);
 }
 .photo-5 {
-  background-image: url(photo-img/5.jpg);
+  background-image: url(5.jpg);
 }
 .photo-6 {
-  background-image: url(photo-img/6.jpg);
+  background-image: url(6.jpg);
 }
 .photo-7 {
-  background-image: url(photo-img/7.jpg);
+  background-image: url(7.jpg);
 }
 .photo-8 {
-  background-image: url(photo-img/8.jpg);
+  background-image: url(8.jpg);
 }
 .photo-9 {
-  background-image: url(photo-img/9.jpg);
+  background-image: url(9.jpg);
 }
 .photo-10 {
-  background-image: url(photo-img/10.jpg);
+  background-image: url(10.jpg);
 }
 .photo-11 {
-  background-image: url(photo-img/11.jpg);
+  background-image: url(11.jpg);
 }
 .photo-12 {
-  background-image: url(photo-img/12.jpg);
+  background-image: url(12.jpg);
 }
 .photo-13 {
-  background-image: url(photo-img/13.jpg);
+  background-image: url(13.jpg);
 }
 .photo-14 {
-  background-image: url(photo-img/14.jpg);
+  background-image: url(14.jpg);
 }
 .photo-15 {
-  background-image: url(photo-img/15.jpg);
+  background-image: url(15.jpg);
 }
 .photo-16 {
-  background-image: url(photo-img/16.jpg);
+  background-image: url(16.jpg);
 }
 .photo-17 {
-  background-image: url(photo-img/17.jpg);
+  background-image: url(17.jpg);
 }
 .photo-18 {
-  background-image: url(photo-img/18.jpg);
+  background-image: url(18.jpg);
 }
 
 /*背景*/
@@ -207,7 +172,7 @@ top: -40px;
 .mini-cont-separation {
   box-sizing: border-box;
   width: 100%;
-  padding: 50vh 20vw;
+  padding: 40vh 10vw;
   text-align: center;
 }
 .style-one {
@@ -220,7 +185,7 @@ top: -40px;
 .mini-cont-separation {
   box-sizing: border-box;
   width: 100%;
-  padding: 30vh 10vw;
+  padding: 30vh 5vw;
   text-align: center;
 }
 
@@ -235,6 +200,32 @@ top: -40px;
     
 }
 
+.coee{
+  text-align:center;
+  font-size:20px;
+width:100%;
+background-color: rgb(61, 56, 56);
+color: #fff;
+  position: relative;
+  height:100px;
+bottom: 0px;
+margin: 0;
+}
+
+
+
+.coeee{
+  text-align:center;
+  font-size:40px;
+width:100%;
+background-color: rgb(61, 56, 56);
+color: #fff;
+  position: relative;
+  height:40px;
+bottom: 0px;
+margin: 0;
+top: -40px;
+}
 
 
 /* Animation */
@@ -248,14 +239,6 @@ top: -40px;
     100% {
         border-image-source: inherit;
     }
-}
-
-#menu {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  width: 8em;
-  margin-top: -2.5em;
 }
 
 .goods img:hover {
@@ -274,3 +257,4 @@ top: -40px;
       transform: translate(0px, 0px);
   }
 }
+
