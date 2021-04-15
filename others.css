@@ -975,3 +975,101 @@ a:hover {
 a:active {
   color: red;
 }
+
+/*特效*/
+
+.font-f {
+	font-family: 'Permanent Marker', cursive;
+  }
+  
+  .mini-cont-separation {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 40vh 10vw;
+	text-align: center;
+  }
+  .style-one {
+	background-image: url('https://cob.cycu.edu.tw/wp-content/uploads/honor_20060103.jpg');
+	background-repeat: no-repeat;
+	opacity: 1;
+	color: #fff;
+  }
+  
+  .mini-cont-separation {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 30vh 5vw;
+	text-align: center;
+	height: 560px;
+  }
+  
+  .border-decor-1 {
+	  font-size: 36px;
+	  border: 20px solid transparent;
+	  border-image-source: url(https://res.cloudinary.com/dzq1l03yt/image/upload/v1591679413/decor_kqedm6.svg);
+	  border-image-slice: 19;
+	  border-image-repeat: repeat;
+	  display: inline-block;
+	  padding: 6px 19px;
+	  
+  }
+  
+  .coee{
+	text-align:center;
+	font-size:20px;
+  width:100%;
+  background-color: rgb(61, 56, 56);
+  color: #fff;
+	position: relative;
+	height:100px;
+  bottom: 0px;
+  margin: 0;
+  }
+  
+  
+  
+  .coeee{
+	text-align:center;
+	font-size:40px;
+  width:100%;
+  background-color: rgb(61, 56, 56);
+  color: #fff;
+	position: relative;
+	height:40px;
+  bottom: 0px;
+  margin: 0;
+  top: -40px;
+  }
+  
+  
+  /* Animation */
+  .miniShowHideBorder {
+	  animation: miniShowHideBorder 1s linear 1s infinite alternate;
+  }
+  @keyframes miniShowHideBorder {
+	  0% {
+		  border-image-source: transparent;
+	  }
+	  100% {
+		  border-image-source: inherit;
+	  }
+  }
+  
+  .goods img:hover {
+	animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
+	
+  }
+  
+  @keyframes myfirst {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	50% {
+		transform: translate(0px, -9px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+  }
+  
+  
