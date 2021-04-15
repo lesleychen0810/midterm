@@ -641,3 +641,36 @@ a:hover {
 a:active {
   color: red;
 }
+
+/* Animation */
+.miniShowHideBorder {
+  animation: miniShowHideBorder 1s linear 1s infinite alternate;
+}
+@keyframes miniShowHideBorder {
+  0% {
+    border-image-source: transparent;
+  }
+  100% {
+    border-image-source: inherit;
+  }
+}
+
+.goods img:hover {
+animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
+
+}
+
+@keyframes myfirst {
+0% {
+  transform: translate(0px, 0px);
+}
+50% {
+  transform: translate(0px, -9px);
+}
+100% {
+  transform: translate(0px, 0px);
+}
+}
+
+
+
