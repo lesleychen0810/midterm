@@ -233,6 +233,11 @@ text-align:center;
 }
 
 
+.clickme{
+       position:absolute;
+       left:110px;
+       top:-100px;
+}
 
 
 
