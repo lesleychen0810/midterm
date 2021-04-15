@@ -24,7 +24,7 @@ header{
   display: flex;
   max-width: 1140px;
   
-  background-color:rgb(180, 192, 189);
+  background-color:white;
   
 }
 
@@ -239,5 +239,22 @@ top: -40px;
     100% {
         border-image-source: inherit;
     }
+}
+
+.goods img:hover {
+  animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
+  
+}
+
+@keyframes myfirst {
+  0% {
+      transform: translate(0px, 0px);
+  }
+  50% {
+      transform: translate(0px, -9px);
+  }
+  100% {
+      transform: translate(0px, 0px);
+  }
 }
 
