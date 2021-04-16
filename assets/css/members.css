@@ -306,7 +306,7 @@ text-align:center;
     border-radius: 10%;
     width: 300px;
     height:310px;
-    background-color:#A6FFA6;
+    background-color:#D9006C;
     transform: rotateY(180deg);
     font-size:18px;
   }
@@ -330,7 +330,7 @@ text-align:center;
     height:310px;
     background-color: #81C0C0;
     transform: rotateY(180deg);
-    font-size:13px;
+    font-size:18px;
   }
 
   .flip-box-back p{
