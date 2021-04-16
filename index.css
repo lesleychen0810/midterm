@@ -92,58 +92,58 @@ header{
 
 
 .photo-1 {
-  background-image: url(1.jpg);
+  background-image: url(https://img.onl/jIrVfu); /*img.onl圖片網站存放時間不依定*/
 }
 .photo-2 {
-  background-image: url(2.jpg);
+  background-image: url(https://img.onl/QXYAqP);
 }
 .photo-3 {
-  background-image: url(3.jpg);
+  background-image: url(https://img.onl/RiHe1z);
 }
 .photo-4 {
-  background-image: url(4.jpg);
+  background-image: url(https://img.onl/8895PT);
 }
 .photo-5 {
-  background-image: url(5.jpg);
+  background-image: url(https://img.onl/GcXE6);
 }
 .photo-6 {
-  background-image: url(6.jpg);
+  background-image: url(https://img.onl/vmMY1l);
 }
 .photo-7 {
-  background-image: url(7.jpg);
+  background-image: url(https://img.onl/Mbvaxv);
 }
 .photo-8 {
-  background-image: url(8.jpg);
+  background-image: url(https://img.onl/u0u7tT);
 }
 .photo-9 {
-  background-image: url(9.jpg);
+  background-image: url(https://img.onl/t08wBp);
 }
 .photo-10 {
-  background-image: url(10.jpg);
+  background-image: url(https://img.onl/qZQ8Gf);
 }
 .photo-11 {
-  background-image: url(11.jpg);
+  background-image: url(https://img.onl/Zl5ACJ);
 }
 .photo-12 {
-  background-image: url(12.jpg);
+  background-image: url(https://img.onl/aASnb6);
 }
 .photo-13 {
-  background-image: url(13.jpg);
+  background-image: url(https://img.onl/TuggmF);
 }
 .photo-14 {
-  background-image: url(14.jpg);
+  background-image: url(https://img.onl/Vp1J8e);
 }
 .photo-15 {
-  background-image: url(15.jpg);
+  background-image: url(https://img.onl/OFLVS2);
 }
 .photo-16 {
-  background-image: url(16.jpg);
+  background-image: url(https://img.onl/2IlbEY);
 }
 .photo-17 {
-  background-image: url(17.jpg);
+  background-image: url(https://img.onl/Pzef42);
 }
 .photo-18 {
-  background-image: url(18.jpg);
+  background-image: url(https://img.onl/E4b6oJ);
 }
 
 /*背景*/
@@ -187,7 +187,6 @@ header{
   width: 100%;
   padding: 30vh 5vw;
   text-align: center;
-  height: 560px;
 }
 
 .border-decor-1 {
@@ -240,22 +239,5 @@ top: -40px;
     100% {
         border-image-source: inherit;
     }
-}
-
-.goods img:hover {
-  animation: myfirst 0.5s infinite;    /*無限次跳動   infinite*/
-  
-}
-
-@keyframes myfirst {
-  0% {
-      transform: translate(0px, 0px);
-  }
-  50% {
-      transform: translate(0px, -9px);
-  }
-  100% {
-      transform: translate(0px, 0px);
-  }
 }
 
