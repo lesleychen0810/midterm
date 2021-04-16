@@ -280,7 +280,7 @@ text-align:center;
     transform: rotateY(180deg);
   }
   
-  .flip-box-front,.flip-box-back {
+  .flip-box-front,.flip-box-back,.flip-box-back2,.flip-box-back3,.flip-box-back4 {
     position: absolute;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
