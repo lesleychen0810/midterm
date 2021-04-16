@@ -294,7 +294,7 @@ text-align:center;
     height:310px;
     background-color: #CA8EFF;
     transform: rotateY(180deg);
-    font-size:10px;
+    font-size:13px;
   }
 
  .flip-box-back2 {
@@ -305,7 +305,7 @@ text-align:center;
     height:310px;
     background-color:#A6FFA6;
     transform: rotateY(180deg);
-    font-size:10px;
+    font-size:13px;
   }
 
  .flip-box-back3 {
@@ -316,7 +316,7 @@ text-align:center;
     height:310px;
     background-color: #46A3FF;
     transform: rotateY(180deg);
-    font-size:10px;
+    font-size:13px;
   }
 
  .flip-box-back4 {
@@ -327,7 +327,7 @@ text-align:center;
     height:310px;
     background-color: #81C0C0;
     transform: rotateY(180deg);
-    font-size:10px;
+    font-size:13px;
   }
   .flip-box-back p{
     text-align: center;
