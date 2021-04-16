@@ -9,8 +9,8 @@
 	<section class="music">
 		<embed src="123.mp3" autostart="true" loop="true" hidden="true"></embed>
 	  </section>
-  <link rel="stylesheet" type="text/css" href="cyim.css">
-  <link rel="stylesheet" type="text/css" href="coverflow.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/cyim.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/coverflow.css">
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
@@ -50,39 +50,89 @@
 	
 	</table>
 
-    <!--照片輪播-->
-	 <div style="margin-top: 250px; border-width: 10px;">
-            <div all >
-              <div class="allslide">
-                  <div class="slide">
-            
-                    <div class="mySlides">
-                      <img src="./img/d01.jpeg">
-                    </div>
-                    <div class="mySlides">
-                      <img src="./img/d02.jpeg">
-                    </div>
-                    <div class="mySlides">
-                      <img src="./img/d03.jpeg>
-                    </div>
-            
-                    
-                         
-                      <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
-                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                                 
-                  </div>
-                      <br>
-                      <div class="cirbtn">
-                        <span class="cir" onclick="currentSlide(1)"></span> 
-                        <span class="cir" onclick="currentSlide(2)"></span> 
-                        <span class="cir" onclick="currentSlide(3)"></span> 
-                       
-                      </div>
-                  </div>
-            </div>
-
 	
+	<div style="margin-top: 250px; border-width: 10px;">
+		<div all >
+		  <div class="allslide">
+			  <div class="slide">
+		
+				<div class="mySlides">
+				  <img src="./img/d01.jpeg">
+				</div>
+				<div class="mySlides">
+				  <img src="./img/d02.jpg">
+				</div>
+				<div class="mySlides">
+				  <img src="./img/d03.jpg">
+				</div>
+		
+
+					 
+				  <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+							 
+			  </div>
+				  <br>
+				  <div class="cirbtn">
+					<span class="cir" onclick="currentSlide(1)"></span> 
+					<span class="cir" onclick="currentSlide(2)"></span> 
+					<span class="cir" onclick="currentSlide(3)"></span> 
+					
+				  </div>
+			  </div>
+		</div>
+		<!-- 
+
+//自動2秒一次
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");//取得所有 class 為 “mySlides” 的元素：
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";  /*圖片消失*/
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}
+slides[slideIndex-1].style.display = "block"; /*圖片出現*/
+
+setTimeout(showSlides, 4000); // Change image every 4 seconds
+}-->
+
+<script>
+//手動
+var slideIndex = 1;
+ showSlides(slideIndex);
+ 
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
+ 
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+ 
+ function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("mySlides");
+   var squs = document.getElementsByClassName("squ");
+   if (n > slides.length) {slideIndex = 1}    
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+	   slides[i].style.display = "none";  
+   }
+   for (i = 0; i < squs.length; i++) {
+	 squs[i].className = squs[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";  
+   squs[slideIndex-1].className += " active";
+ }
+
+</script>
+
+
+
 	<div>
 		<aside style="margin-top: 250px;">
 			<td><div class="goods"><a href="#aa"><img src="./img/c011.png" alt="素材"></a></div></td>
@@ -193,6 +243,33 @@
 	</article>
 
 </div>
+
+<div>
+
+	<button onclick="topFunction()" id="myBtn">Top</button>
+    <script>var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</div>
+
+
+
+
 </body>
 
 <footer class="coee" style="margin-top: 3700px;">
