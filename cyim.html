@@ -51,88 +51,14 @@
 	</table>
 
 	
-	<div style="margin-top: 250px; border-width: 10px;">
-		<div all >
-		  <div class="allslide">
-			  <div class="slide">
-		
-				<div class="mySlides">
-				  <img src="./img/d01.jpeg">
-				</div>
-				<div class="mySlides">
-				  <img src="./img/d02.jpg">
-				</div>
-				<div class="mySlides">
-				  <img src="./img/d03.jpg">
-				</div>
-		
+	 <!--照片輪播-->
+	<div id="cover" class="coverflow" style="margin-top: 200px;"> 
+		<a href='#'><img src="img/d01.jpeg" alt="照片" ></a>
+		<a href='#'><img src="img/d02.jpg" alt="照片" ></a>
+		<a href='#'><img src="img/d03.jpg" alt="照片" ></a>
+	</div>
 
-					 
-				  <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
-				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-							 
-			  </div>
-				  <br>
-				  <div class="cirbtn">
-					<span class="cir" onclick="currentSlide(1)"></span> 
-					<span class="cir" onclick="currentSlide(2)"></span> 
-					<span class="cir" onclick="currentSlide(3)"></span> 
-					
-				  </div>
-			  </div>
-		</div>
-		<!-- 
-
-//自動2秒一次
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-var i;
-var slides = document.getElementsByClassName("mySlides");//取得所有 class 為 “mySlides” 的元素：
-for (i = 0; i < slides.length; i++) {
-slides[i].style.display = "none";  /*圖片消失*/
-}
-slideIndex++;
-if (slideIndex > slides.length) {slideIndex = 1}
-slides[slideIndex-1].style.display = "block"; /*圖片出現*/
-
-setTimeout(showSlides, 4000); // Change image every 4 seconds
-}-->
-
-<script>
-//手動
-var slideIndex = 1;
- showSlides(slideIndex);
- 
- function plusSlides(n) {
-   showSlides(slideIndex += n);
- }
- 
- function currentSlide(n) {
-   showSlides(slideIndex = n);
- }
- 
- function showSlides(n) {
-   var i;
-   var slides = document.getElementsByClassName("mySlides");
-   var squs = document.getElementsByClassName("squ");
-   if (n > slides.length) {slideIndex = 1}    
-   if (n < 1) {slideIndex = slides.length}
-   for (i = 0; i < slides.length; i++) {
-	   slides[i].style.display = "none";  
-   }
-   for (i = 0; i < squs.length; i++) {
-	 squs[i].className = squs[i].className.replace(" active", "");
-   }
-   slides[slideIndex-1].style.display = "block";  
-   squs[slideIndex-1].className += " active";
- }
-
-</script>
-
-
-
+	
 	<div>
 		<aside style="margin-top: 250px;">
 			<td><div class="goods"><a href="#aa"><img src="./img/c011.png" alt="素材"></a></div></td>
@@ -183,6 +109,12 @@ var slideIndex = 1;
 </tr>
 
 
+
+</table>
+
+<br>
+			
+	
 
 </table>
 
