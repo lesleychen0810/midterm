@@ -257,12 +257,12 @@ text-align:center;
   .flip-box-back h3{
     padding-top: 5%;
   }
+
   .flip-box-front img{
     width: 280px;
     height: 300px;
     
   }
-
 
   .flip-box-inner {
     display: flex;
@@ -337,13 +337,13 @@ text-align:center;
     text-align: center;
     margin: 2%;
   }
+
   .flip-img img{
     width: 30px;
 
   }
 
 .form{ 
-                
                 align-item: center;	
 		width:1000px;
 		height: 1200px;
@@ -357,42 +357,23 @@ text-align:center;
 		line-height: 40px;
 		padding: 10px;
 
-                
-  
-
-
 }
 
 .button {
-     background: linear-gradient(right,#FE48D3,#BF3DC9); 
-          
-          background: -ms-linear-gradient(right,#FE48D3,#BF3DC9); 
-          
-          background: -webkit-linear-gradient(right,#FE48D3,#BF3DC9); 
-          
-          background: -o-linear-gradient(right,#FE48D3,#BF3DC9); 
-          
-          background: -moz-linear-gradient(right,#FE48D3,#BF3DC9);
-          
-          width:200px; 
-          
-          height:4em; 
-          
-          
-          border-radius:15px; 
-          
-          text-align: center; 
-          
-          vertical-align: middle; 
-          
-          margin-left: 10%; 
-          
-          font: size 20px;; 
-          
-          color: white;
-          
+          background: linear-gradient(right,#FE48D3,#BF3DC9);           
+          background: -ms-linear-gradient(right,#FE48D3,#BF3DC9);           
+          background: -webkit-linear-gradient(right,#FE48D3,#BF3DC9);           
+          background: -o-linear-gradient(right,#FE48D3,#BF3DC9);           
+          background: -moz-linear-gradient(right,#FE48D3,#BF3DC9);          
+          width:200px;          
+          height:4em;         
+          border-radius:15px;   
+          text-align: center;           
+          vertical-align: middle;          
+          margin-left: 10%;           
+          font: size 20px;          
+          color: white;          
           z-index: 999; 
-
   
     }
 
@@ -400,28 +381,33 @@ text-align:center;
 
 .ppp{	width: 300px;
 	height: 500px;
-		padding-top: 30px; 
-		border-radius: 25%;		
-		}
+	padding-top: 30px; 
+	border-radius: 25%;		
+    }
+
 .han{	width: 230px;
-		height: 300px;
-		padding-top: 30px; 
-		border-radius: 20%;	
-                }
+	height: 300px;
+	padding-top: 30px; 
+	border-radius: 20%;	
+     }
 
 .hr2{	position: absolute;
-		top:880px;	
-		}
-hr{		height: 3px;
-		width:100vw;
-		border:0;
-		}
+	top:880px;
+	
+    }
+
+hr{		
+	height: 3px;
+	width:100vw;
+	border:0;
+  }
+
 .aa{
-                width: 300px;
-		height: 300px;
-                position: absolute;
-		top:780px;
-		left:950px;
+        width: 300px;
+	height: 300px;
+        position: absolute;
+	top:780px;
+	left:950px;
 		
 
 }
@@ -439,27 +425,26 @@ hr{		height: 3px;
 		font-weight: bold;
 		line-height: 40px;
 		padding: 10px;
-
- 
-		}
+}
 
 .fb1{	        
-  
-  width:50px;
-		height:50px;
-		position:absolute;
-		top:340px;
-		left:340px;
+        width:50px;
+	height:50px;
+	position:absolute;
+	top:340px;
+	left:340px;
                 
 }
+
 .ig1{	        
-  width:60px;
-		height:60px;
-		position:absolute;
-		top:336px;
-		left:400px;
+        width:60px;
+	height:60px;
+	position:absolute;
+	top:336px;
+	left:400px;
                 
 }
+
 .personal{
                 width:50px;
 		height:50px;
@@ -483,11 +468,13 @@ hr{		height: 3px;
 		margin-bottom:50px;
 		margin-top:50px; 
 		padding: 10px;
-		 }
+	 }
 
-.hr3{	position: absolute;
-		top:1780px;	
-		}
+.hr3{	
+	position: absolute;
+	top:1780px;	
+   }
+
 .people3{
 		text-align: center;	
 		width:500px;
@@ -506,9 +493,11 @@ hr{		height: 3px;
 		padding: 10px;
 		}
 
-.hr4{	position: absolute;
-		top:2670px;	
-		}
+.hr4{	
+	position: absolute;
+	top:2670px;	
+    }
+
 .people4{
 		text-align: center;	
 		width:500px;
@@ -526,19 +515,21 @@ hr{		height: 3px;
 		margin-bottom:150px; 
 		margin-top:50px;
 		}
+
 /*各系標題*/
 
 .ml2 {
   font-weight: 900;
   font-size: 3.5em;
-text-align:center;
-color:#273861;
+  text-align:center;
+  color:#273861;
 }
 
 .ml2 .letter {
   display: inline-block;
   line-height: 1em;
 }
+
 /*ready go*/
 
 .ml4 {
@@ -546,7 +537,7 @@ color:#273861;
   font-weight: 900;
   font-size: 3.5em;
   color:red;
-text-align:center;
+  text-align:center;
 }
 .ml4 .letters {
   position: absolute;
@@ -558,8 +549,8 @@ text-align:center;
 }
 
 .piccs{
-position: relative;
-left:250px;
+   position: relative;
+   left:250px;
     }
 /*各系介紹*/
 
@@ -584,6 +575,7 @@ left:250px;
         font-size: 32px;
         color:#273861;
          }
+
 .123{
     columns:200px;}
 
@@ -617,13 +609,12 @@ left:250px;
       font-size: 24px;
       
 }
+
 .up{
     text-align:center;
     font-size: 24px;
-}
-
-padding-bottom:50px;
-        }
+    padding-bottom:50px;
+     }
 
 .home{	width:200px;
 	height:200px;
@@ -633,13 +624,7 @@ padding-bottom:50px;
 		position: relative;
 		top:-20px;
 		left:20px;
-		}
-
-
-
-
-
-
+}
 
 #myBtn {
 
