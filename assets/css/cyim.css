@@ -27,6 +27,199 @@ header{
   background-attachment: fixed;
 }
 
+ /*slideshow*/
+
+
+
+.theme img{
+    width: 100%;
+}
+
+  /*slideshow*/
+  
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    vertical-align: middle;/*垂直至中*/
+    width: 1000px;
+    height: 700px;
+    margin-left: 19%;
+    margin-top: 0%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.mySlides1 img {
+    vertical-align: middle;/*垂直至中*/
+    width: 1000px;
+    height: 700px;
+    margin-left: 19%;
+    margin-top: 0%;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.slide {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    }
+
+
+/*圖片左右兩邊圖標*/
+.pre, .next {
+    cursor: pointer;/*將鼠標移到圖片上可以看光標結果-手型。*/
+    position: absolute;
+    top: 53%;
+    width: auto;
+    padding: 0%;
+    margin-left: 20%;
+    color:#DDB7AB;
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;/*是否可以選擇屬性指定的元素的文本*/
+    }
+
+ /*右邊按鈕-移到右邊*/
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;/*按鈕圖樣*/
+    margin-right: 16%;
+    }
+
+ /*hover:當滑鼠移至超連結時，不論是文字變色、位移、換背景*/
+    .pre:hover, .next:hover {
+    background-color:#999B84;
+    }
+
+
+
+.cirbtn{
+    margin-bottom:10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.cir {
+cursor: pointer;/*指定指標的形狀:手型*/
+height: 15px;
+width: 15px;
+margin: 1%;
+background-color: #DDB7AB;
+list-style-type: circle;
+border-radius: 50%;
+transition: background-color 0.6s ease; /*總時長0.6秒，ease速度曲線，轉變過程中由慢到快，再到慢结束。*/
+}
+
+
+/*'當滑鼠移到連結時超連結的樣式*/
+.active, .cir:hover {
+background-color:#999B84;
+}
+
+.footer{
+	width:100%;
+	/*background-color:#F0E5DE;*/
+	background-color: rgb(61, 56, 56);
+color: #fff;
+    	position:relative;
+        height: 150px;
+        display: flex;
+        justify-content:space-between;
+    	
+
+
+
+}
+.co{
+        text-align:center;
+        font-size:20px;
+     	width:100%;
+	    /*background-color:#F0E5DE;*/
+	    background-color: rgb(61, 56, 56);
+       color: #fff;
+        position:relative;
+        height:100px;
+    	bottom: 0%;
+	margin: 0;
+  
+  
+}
+.web2 > iframe{
+    width: 100%;
+    height: 100%; 
+    padding: 0;
+}
+.web2{
+    width: 35%;
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: left;
+}
+.web2 img{
+    
+    width:  400%;
+    height: 900%;
+}
+.navbtn2 {
+    width: 80%;
+    overflow: hidden;
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbtn2 h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.navbtn2 a{
+    font-size: 20px;
+    color: #844200;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+  
+}
+.navphoto2{
+    width: 20%;
+    outline: none;
+    display: flex;
+    justify-content: space-evenly;
+    bottom:50px;
+    right:20px;
+}
+
+
+.navphoto2 img{
+    width: 85%;
+    height: 40px;
+    margin-top: 60px;
+    display: flex;
+    cursor: pointer;
+}
+
 div{
   width: 100%;
 }
