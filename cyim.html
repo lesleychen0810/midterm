@@ -9,8 +9,8 @@
 	<section class="music">
 		<embed src="123.mp3" autostart="true" loop="true" hidden="true"></embed>
 	  </section>
-  <link rel="stylesheet" type="text/css" href="assets/css/cyim.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/coverflow.css">
+  <link rel="stylesheet" type="text/css" href="cyim.css">
+  <link rel="stylesheet" type="text/css" href="coverflow.css">
   <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
@@ -50,89 +50,14 @@
 	
 	</table>
 
+    <!--照片輪播-->
+	<div id="cover" class="coverflow" style="margin-top: 200px;"> 
+		<a href='#'><img src="img/d01.jpeg" alt="照片" ></a>
+		<a href='#'><img src="img/d02.jpg" alt="照片" ></a>
+		<a href='#'><img src="img/d03.jpg" alt="照片" ></a>
+	</div>
+
 	
-	<div style="margin-top: 250px; border-width: 10px;">
-		<div all >
-		  <div class="allslide">
-			  <div class="slide">
-		
-				<div class="mySlides">
-				  <img src="./img/d01.jpeg">
-				</div>
-				<div class="mySlides">
-				  <img src="./img/d02.jpg">
-				</div>
-				<div class="mySlides">
-				  <img src="./img/d03.jpg">
-				</div>
-		
-
-					 
-				  <a class="pre" onclick="plusSlides(-1)">&#10094;</a>
-				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-							 
-			  </div>
-				  <br>
-				  <div class="cirbtn">
-					<span class="cir" onclick="currentSlide(1)"></span> 
-					<span class="cir" onclick="currentSlide(2)"></span> 
-					<span class="cir" onclick="currentSlide(3)"></span> 
-					
-				  </div>
-			  </div>
-		</div>
-		<!-- 
-
-//自動2秒一次
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-var i;
-var slides = document.getElementsByClassName("mySlides");//取得所有 class 為 “mySlides” 的元素：
-for (i = 0; i < slides.length; i++) {
-slides[i].style.display = "none";  /*圖片消失*/
-}
-slideIndex++;
-if (slideIndex > slides.length) {slideIndex = 1}
-slides[slideIndex-1].style.display = "block"; /*圖片出現*/
-
-setTimeout(showSlides, 4000); // Change image every 4 seconds
-}-->
-
-<script>
-//手動
-var slideIndex = 1;
- showSlides(slideIndex);
- 
- function plusSlides(n) {
-   showSlides(slideIndex += n);
- }
- 
- function currentSlide(n) {
-   showSlides(slideIndex = n);
- }
- 
- function showSlides(n) {
-   var i;
-   var slides = document.getElementsByClassName("mySlides");
-   var squs = document.getElementsByClassName("squ");
-   if (n > slides.length) {slideIndex = 1}    
-   if (n < 1) {slideIndex = slides.length}
-   for (i = 0; i < slides.length; i++) {
-	   slides[i].style.display = "none";  
-   }
-   for (i = 0; i < squs.length; i++) {
-	 squs[i].className = squs[i].className.replace(" active", "");
-   }
-   slides[slideIndex-1].style.display = "block";  
-   squs[slideIndex-1].className += " active";
- }
-
-</script>
-
-
-
 	<div>
 		<aside style="margin-top: 250px;">
 			<td><div class="goods"><a href="#aa"><img src="./img/c011.png" alt="素材"></a></div></td>
@@ -243,55 +168,13 @@ var slideIndex = 1;
 	</article>
 
 </div>
-
 </body>
 
-	
- <div class="footer">
-      <div class="web2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.254655553562!2d121.24134161500476!3d24.95744908400828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468221425297e35%3A0xffae1fe1097c9a2e!2z5Lit5Y6f5aSn5a245ZWG5a246Zmi!5e0!3m2!1szh-TW!2stw!4v1618027834714!5m2!1szh-TW!2stw" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <br><br>
- </div>
+<footer class="coee" style="margin-top: 3700px;">
+	copyright&copy;<b>中原大學資訊管理學系</b>
+	<br>
+	<a href="index.html"><img src="./img/admin-ajax_去背.png" alt="素材" height="50px" width="50px"></a>
   
-      <nav class="navbtn2">
-          <div class="item1">
-             <h3>地址：32023桃園市中壢區中北路200號<br>
-             200 Chung Pei Road, Chung Li District, Taoyuan City, Taiwan 32023, R.O.C.</h3> <br>
-            
-            </nav>
-  
-  
-             <div class="navphoto2"><br><br><br><br><br><br>
-              
-              <a href="https://www.facebook.com/ib.cycu?ref=hl" target="_blank"><img src="./img/fb.jpg" alt="">
-              <a href="tel:+886-3-2655102"><img src="./img/phone.png" alt=""></a>
-              </a>
-           </div>
-           <button onclick="topFunction()" id="myBtn">Top</button>
-           <script>var mybutton = document.getElementById("myBtn");
-
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
-            
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
-        </script>
-        
-         </div>
-      
-         <div class="co">
-          copyright&copy;中原大學資管系 Chung Yuan University <Br>
-          <a href="index.html"><img src="./img/admin-ajax_去背.png" alt="素材" height="50px" width="50px"></a> 
-
-          </div> 
+  </footer>
 
 </html>
