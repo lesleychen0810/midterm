@@ -66,6 +66,8 @@ aside{
   margin-top: -2.5em;
 }
 
+
+
 .footer{
 	width:100%;
 	/*background-color:#F0E5DE;*/
@@ -157,7 +159,6 @@ color: #fff;
     display: flex;
     cursor: pointer;
 }
-
 
 
 
@@ -261,6 +262,24 @@ top: -40px;
   100% {
       transform: translate(0px, 0px);
   }
+}
+
+.navphoto2{
+  width: 20%;
+  outline: none;
+  display: flex;
+  justify-content: space-evenly;
+  bottom:50px;
+  right:20px;
+}
+
+
+.navphoto2 img{
+  width: 85%;
+  height: 40px;
+  margin-top: 60px;
+  display: flex;
+  cursor: pointer;
 }
 
 /*----------------------------------------*/
